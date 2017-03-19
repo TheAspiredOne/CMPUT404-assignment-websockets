@@ -165,7 +165,6 @@ def update(entity):
     '''update the entities via this interface'''
     req = json.loads(request.data)
     myWorld.set(entity,req)
-    # return flask.jsonify(myWorld.get(entity))
     return json.dumps(myWorld.get(entity))
 
 
